@@ -11,7 +11,7 @@
 1. `Cargo.toml` 中的 `package.name`。
 2. `Cargo.lock` 中当前项目的包名。
 3. `src/main.rs` 中的应用结构体引用、窗口标题和错误文本。
-4. `src/app.rs` 中的 `MalooApp` 定义、实现及标题栏软件名。
+4. `src/app.rs` 中的 `GpuiReadyApp` 定义、实现及标题栏软件名。
 5. `build.rs` 中的 RC 文件名。
 6. 根目录 `gpui_ready.rc` 的文件名。
 7. 新项目所在目录名称。

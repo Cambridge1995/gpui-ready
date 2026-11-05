@@ -1,6 +1,6 @@
 # gpui-ready
 
-一个用于快速创建 Rust + GPUI Kit Windows/macOS 桌面应用的当前工作模板，复刻自 maloo 的基础工程。
+一个用于快速创建 Rust + GPUI Kit Windows/macOS 桌面应用的当前工作模板，复刻 GpuiReady 的基础工程。
 
 ## 已包含
 
@@ -12,7 +12,7 @@
 - 内嵌 SVG 资源和 Windows `.ico` 程序图标。
 - `main.rs` 仅负责启动，界面与资源分别位于 `app.rs`、`assets.rs`。
 
-模板不携带 `target` 构建产物，也不携带 maloo 的产品计划书或架构书。
+模板不携带 `target` 构建产物，也不携带 GpuiReady 的产品计划书或架构书。
 
 ## 一键创建项目
 

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="rainbow" x1="53" y1="53" x2="203" y2="203" gradientUnits="userSpaceOnUse">
+      <stop offset="0"    stop-color="#F4735F"/>
+      <stop offset="0.17" stop-color="#F5A04E"/>
+      <stop offset="0.33" stop-color="#F0CE4E"/>
+      <stop offset="0.5"  stop-color="#4FC98A"/>
+      <stop offset="0.67" stop-color="#4E9BF5"/>
+      <stop offset="0.83" stop-color="#6E7BF2"/>
+      <stop offset="1"    stop-color="#A97EF0"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- stacked asset layers -->
+  <g transform="rotate(-6 108 108)">
+    <rect x="33" y="33" width="150" height="150" rx="30" fill="#F5A04E" opacity="0.16"/>
+  </g>
+  <g transform="rotate(-3 118 118)">
+    <rect x="43" y="43" width="150" height="150" rx="30" fill="#6E7BF2" opacity="0.20"/>
+  </g>
+
+  <!-- film frame -->
+  <rect x="53" y="53" width="150" height="150" rx="30" fill="url(#rainbow)" filter="url(#glow)"/>
+
+  <!-- sprocket holes -->
+  <g fill="#242638">
+    <rect x="65"  y="78"  width="12" height="18" rx="4"/>
+    <rect x="65"  y="119" width="12" height="18" rx="4"/>
+    <rect x="65"  y="160" width="12" height="18" rx="4"/>
+    <rect x="179" y="78"  width="12" height="18" rx="4"/>
+    <rect x="179" y="119" width="12" height="18" rx="4"/>
+    <rect x="179" y="160" width="12" height="18" rx="4"/>
+  </g>
+
+  <!-- play triangle -->
+  <path d="M108 96 L108 160 L164 128 Z"
+        fill="#242638" stroke="#242638" stroke-width="10"
+        stroke-linejoin="round"/>
+
+  <!-- recording dot -->
+  <circle cx="200" cy="48" r="8" fill="#E8C98A"/>
+</svg>
